@@ -189,5 +189,15 @@ function showForm() {
 }
 </script>
 
+<script>
+// 公開期限チェック：2026年8月12日23:59まで
+var deadline = new Date('2026-08-12T23:59:00');
+var now = new Date();
+
+if (now > deadline) {
+  document.body.innerHTML = '<div style="display:flex; align-items:center; justify-content:center; min-height:100vh; background:#0d1a33;"><div style="text-align:center; padding:40px;"><div style="color:#C9A84C; font-size:18px; font-weight:700; margin-bottom:16px;">期間限定 特別動画</div><div style="color:#fff; font-size:16px; line-height:1.8;">この動画の公開期間は終了しました。<br>またの機会にお会いしましょう。</div></div></div>';
+}
+</script>
+
 </body>
 </html>
